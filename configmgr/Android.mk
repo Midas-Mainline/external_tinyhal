@@ -52,10 +52,10 @@ ifeq ($(strip $(TINYALSA_NO_CTL_GET_ID)),true)
 LOCAL_CFLAGS += -DTINYALSA_NO_CTL_GET_ID
 endif
 
-ifeq ($(strip $(BOARD_USES_VENDORIMAGE)),true)
+#ifeq ($(strip $(BOARD_USES_VENDORIMAGE)),true)
 LOCAL_PROPRIETARY_MODULE := true
 LOCAL_CFLAGS += -DETC_PATH=\"/vendor/etc/\"
-endif
+#endif
 
 ifeq ($(NATIVE_COVERAGE),true)
 LOCAL_NATIVE_COVERAGE := true
